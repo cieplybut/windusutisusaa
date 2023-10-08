@@ -42,12 +42,7 @@ local http = require 'gamesense/http'
                     }
         
                     client.exec("clear")
-                    client.color_log(255, 255, 255, " \n \n \n \n \n ")
-                    client.color_log(lua_color.r, lua_color.g, lua_color.b, lua_banner)
-                    client.color_log(255, 255, 255, " \n \n \n \n \n ")
-                    client.color_log(255, 255, 255, "Welcome to\0")
-                    client.color_log(lua_color.r, lua_color.g, lua_color.b, " gengar.lua\0")
-                    client.color_log(255, 255, 255, ", " .. login.username)
+                    client.color_log(lua_color.r, lua_color.g, lua_color.b, "Loaded gengar.lua\0")
                     local lua = {}
                     lua.database = {
                         configs = ":" .. lua_name .. "::configs:"
