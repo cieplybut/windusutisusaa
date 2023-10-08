@@ -6,17 +6,6 @@ local http = require 'gamesense/http'
                     -- @region LUASETTINGS start
                     local lua_name = "gengar"
                     local lua_color = {r = 190, g = 190, b = 255}
-                        
-                    local lua_banner = [[                                                                                                           
-                                        _  __ _        _             
-                                        (_)/ _(_)      | |            
-                    ___ _ __ _   _  ___ _| |_ ___  __ | |_   _  __ _ 
-                    / __| '__| | | |/ __| |  _| \ \/ / | | | | |/ _` |
-                    | (__| |  | |_| | (__| | | | |>  < _| | |_| | (_| |
-                    \___|_|   \__,_|\___|_|_| |_/_/\_(_)_|\__,_|\__,_|
-                                                                        
-                                                                                                                                                                                            
-                    ]]
                     local function try_require(module, msg)
                         local success, result = pcall(require, module)
                         if success then return result else return error(msg) end
